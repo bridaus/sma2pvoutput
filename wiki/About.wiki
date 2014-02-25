@@ -2,7 +2,7 @@
 
 = About =
 
-A [#Windows PowerShell] script that takes data from an SMA inverter and uploads it to pvoutput.org
+A PowerShell script that takes data from an SMA inverter and uploads it to pvoutput.org
 
 <wiki:toc max_depth="3" />
 
