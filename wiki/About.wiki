@@ -30,7 +30,9 @@ The script can be run on a scheduled basis to periodically post status updates t
 
 === Sunny Explorer ===
 
-== Modifying the Script ==
+== Installing SMA2PVOutput.ps1 ==
+
+== Modifying SMA2PVOutput.ps1 ==
 
 = Syntax =
 
