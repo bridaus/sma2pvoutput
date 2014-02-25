@@ -8,9 +8,9 @@ A [#Windows_PowerShell Windows Powershell] script that takes data from an [#SMA_
 
 = Introduction =
 
-The SMA2PVOutput.ps1 script is intended to be used in conjunction with the Sunny Explorer software from SMA to gather data from a solar PV plant and upload it to pvoutput.org.
+The SMA2PVOutput.ps1 script is intended to be used in conjunction with the [#Sunny_Explorer Sunny Explorer] software from SMA to gather data from a solar PV plant and upload it to [#pvoutput.org pvoutput.org].
 
-The script can be run on a scheduled basis to periodically post status updates that can then be viewed remotely via the pvoutput.org web site.
+The script can be run on a scheduled basis to periodically post status updates that can then be viewed remotely via the [#pvoutput.org pvoutput.org] web site.
 
 = Getting Started =
 
