@@ -1,0 +1,38 @@
+#summary Introduction to sma2pvoutput.org
+
+= Purpose =
+
+A Windows PowerShell script that takes data from an SMA inverter and uploads it to pvoutput.org
+
+= Introduction =
+
+The script is intended to be used in conjunction with the Sunny Explorer software from SMA to gather data from a solar PV plant and upload it to pvoutput.org.
+
+The script can be run on a scheduled basis to periodically post status updates that can then be viewed remotely via the pvoutput.org web site.
+
+= Getting Started =
+
+== pvoutput.org ==
+
+=== API Settings
+
+=== Adding a system
+
+== Hardware Requirements ===
+
+=== SMA Inverter
+
+=== Network Connectivity
+
+== Software Requirements ===
+
+=== Windows PowerShell ===
+
+=== Sunny Explorer ===
+
+== Modifying the Script ==
+
+== Scheduling ==
+
+== About the Author ==
+
