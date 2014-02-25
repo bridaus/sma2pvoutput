@@ -16,6 +16,8 @@ The script can be run on a scheduled basis to periodically post status updates t
 
 == pvoutput.org ==
 
+http://www.pvoutput.org is a free service for sharing, comparing and monitoring live solar photovoltaic (PV) and energy consumption data.
+
 === API Settings ===
 
 === Adding a system ===
