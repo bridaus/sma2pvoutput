@@ -32,6 +32,6 @@ The script can be run on a scheduled basis to periodically post status updates t
 
 == Modifying the Script ==
 
-== Scheduling ==
+= Scheduling =
 
-== About the Author ==
+= About the Author =
