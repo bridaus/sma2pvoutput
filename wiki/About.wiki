@@ -28,7 +28,7 @@ The script can be run on a scheduled basis to periodically post status updates t
 
 == Software Requirements ===
 
-=== Windows PowerShell ===
+=== Windows !PowerShell ===
 
 === Sunny Explorer ===
 
