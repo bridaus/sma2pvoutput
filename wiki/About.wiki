@@ -1,8 +1,8 @@
 #summary Introduction to sma2pvoutput.org
 
-= Purpose =
+= [Purpose] =
 
-A [Windows_PowerShell] script that takes data from an SMA inverter and uploads it to pvoutput.org
+A [#Windows_PowerShell] script that takes data from an SMA inverter and uploads it to pvoutput.org
 
 = Introduction =
 
