@@ -14,15 +14,15 @@ The script can be run on a scheduled basis to periodically post status updates t
 
 == pvoutput.org ==
 
-=== API Settings
+=== API Settings ===
 
-=== Adding a system
+=== Adding a system ===
 
 == Hardware Requirements ===
 
-=== SMA Inverter
+=== SMA Inverter ===
 
-=== Network Connectivity
+=== Network Connectivity ===
 
 == Software Requirements ===
 
@@ -35,4 +35,3 @@ The script can be run on a scheduled basis to periodically post status updates t
 == Scheduling ==
 
 == About the Author ==
-
