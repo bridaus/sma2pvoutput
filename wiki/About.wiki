@@ -1,6 +1,6 @@
 #summary Introduction to sma2pvoutput.org
 
-= About SMA3PVOutput.ps1 =
+= About SMA2PVOutput.ps1 =
 
 A PowerShell script that takes data from an SMA inverter and uploads it to pvoutput.org
 
