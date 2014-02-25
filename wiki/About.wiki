@@ -4,6 +4,8 @@
 
 A [#Windows PowerShell] script that takes data from an SMA inverter and uploads it to pvoutput.org
 
+<wiki:toc max_depth="1" />
+
 = Introduction =
 
 The SMA2PVOutput.ps1 script is intended to be used in conjunction with the Sunny Explorer software from SMA to gather data from a solar PV plant and upload it to pvoutput.org.
