@@ -100,12 +100,14 @@ This value is the API Key of your system as listed in the API Settings section o
 
 This value specifies the installation folder for the Sunny Explorer application and should be the name of the folder containing the SunnyExplorer.exe executable file.
 
-Typical values are:
-`"C:\Program Files\SMA\Sunny Explorer"`
-or
-`"C:\Program Files (x86)\SMA\Sunny Explorer"`
+Typical values would be `"C:\Program Files\SMA\Sunny Explorer"` or `"C:\Program Files (x86)\SMA\Sunny Explorer"`.
 
 ==== `$ExportPath` ====
+
+This values specified the data folder for Sunny Explorer. It is the folder that Sunny Explorer uses to store the CSV files produced when PV status information is exported.
+
+A typical values would be `"C:\Users\_username_\Documents\SMA\Sunny Explorer"`
+
 ==== `$PlantName` ====
 ==== `$PlantExtension` ====
 ==== `$UserPwd` ====
