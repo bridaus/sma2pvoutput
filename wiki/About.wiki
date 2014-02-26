@@ -104,16 +104,35 @@ Typical values would be `"C:\Program Files\SMA\Sunny Explorer"` or `"C:\Program 
 
 ==== `$ExportPath` ====
 
-This values specified the data folder for Sunny Explorer. It is the folder that Sunny Explorer uses to store the CSV files produced when PV status information is exported.
+This values specified the data folder for Sunny Explorer. It is the folder that Sunny Explorer uses to locate the plant settings file and also where the CSV files produced when PV status information is exported are stored.
 
 A typical value would be `"C:\Users\`_username_`\Documents\SMA\Sunny Explorer"`.
 
 ==== `$PlantName` ====
+
+The name of the plant as defined in Sunny Explorer. It is the name of the plant settings file without the .SX2 or .SXP extension.
+
+A typical value would be `"My PV plant 1"`.
+
 ==== `$PlantExtension` ====
+
+The file extension of the plant settings file. A typical value would be `".SX2"` or `".SXP"`
+
 ==== `$UserPwd` ====
 
+The password used when connecting to the plant using the User credentials. The default User password for a new inverter is "0000".
 
 = Syntax =
+
+`SMA2PVOutput.ps1 [[-Date] yyyyMMdd] [-ExportFromInverter] [-BatchMode]
+
+where:
+
+The `-Date` parameter specifies the date for which PV statuses are to be uploaded. The default is today.
+The `-ExportFromInverter` switch tells the script to launch Sunny Explorer to export the day's generation information. The default behaviour is to use existing exported data.
+The `-BatchMode` switch tells the script that rather than upload new statuses one by one, the statuses are posted as a batch of up to 30 statuses.
+
+
 
 = Logging =
 
