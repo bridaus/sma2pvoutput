@@ -22,7 +22,7 @@ Please consider donating to PVOutput via their [http://www.pvoutput.org/donate.j
 
 http://www.pvoutput.org is a free service for sharing, comparing and monitoring live solar photovoltaic (PV) and energy consumption data. In order to upload data to a system on PVOutput, it is first necessary to register an account.
 
-Once you have a user registered, log in and [#Adding_a_System add your system(s)] to the account.
+Once you have registered a user, log in and [#Adding_a_System add your system(s)] to the account.
 
 For more information on PVOutput, see http://www.pvoutput.org/help.html
 
