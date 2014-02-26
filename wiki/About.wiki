@@ -34,11 +34,15 @@ Once `API Access` is `Enabled`, you need an [#$ApiKey API Key] which can be gene
 
 === Adding a system ===
 
-Your [http://www.pvoutput.org/account.jsp account settings] page on pvoutput.org also includes a section titled Registered Systems. Use the `Add System` link to register a new system.
+Your [http://www.pvoutput.org/account.jsp account settings] page on pvoutput.org also includes a section titled Registered Systems. Use the `Add System` link to register a new system. The [#$SystemId System Id] is also stored in the SMA2PVOutput.ps1 script as a means of identifying the system whose data is being uploaded.
 
 == Hardware Requirements ===
 
 === SMA Inverter ===
+
+The SMA2PVOutput.ps1 script uses the SMA [#Sunny_Explorer Sunny Explorer] tool to obtain data from the PV inverter. It should therefore work with any SMA inverter supported by Sunny Explorer.
+
+A PV plant can comprise one or more inverters. The SMA2PVOutput.ps1 script is designed to work with PV plants containing up to 4 inverters.
 
 === Network Connectivity ===
 
