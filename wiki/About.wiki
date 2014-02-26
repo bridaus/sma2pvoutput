@@ -76,7 +76,7 @@ The SMA2PVOutput.ps1 script should cope with most date, time and number formats 
 
 Additionally, it is recommended that the Time Format within Sunny Explorer be set to 24-hour. To do this, launch Sunny Explorer and highlight the Sunny Explorer branch in the navigation pane. Within the Device settings on the right, ensure the Time Format is set to `HH:mm` and _not_ `hh:mm`.
 
-=== Preparing the SMA2PVOutput.ps1 script ===
+=== Downloading the SMA2PVOutput.ps1 script ===
 
 Download a copy of the SMA2PVOutput.ps1 script from the Downloads section of the [http://code.google.com/p/sma2pvoutput project home page]. Make a local copy of the SMA2PVOutput.ps1 script on the Windows system on which you run Sunny Explorer.
 
@@ -93,7 +93,18 @@ Open your local copy of the SMA2PVOutput.ps1 script in a text editor (eg Notepad
 This value is the System Id of your system as reported alongside the system name in the [http://www.pvoutput.org/account.jsp account settings] on the [#pvoutput.org pvoutput.org] web site.
 
 ==== `$ApiKey` ====
+
+This value is the API Key of your system as listed in the API Settings section of the [http://www.pvoutput.org/account.jsp account settings] on the [#pvoutput.org pvoutput.org] web site.
+
 ==== `$SEPath` ====
+
+This value specifies the installation folder for the Sunny Explorer application and should be the name of the folder containing the SunnyExplorer.exe executable file.
+
+Typical values are:
+`"C:\Program Files\SMA\Sunny Explorer"`
+or
+`"C:\Program Files (x86)\SMA\Sunny Explorer"`
+
 ==== `$ExportPath` ====
 ==== `$PlantName` ====
 ==== `$PlantExtension` ====
@@ -101,6 +112,8 @@ This value is the System Id of your system as reported alongside the system name
 
 
 = Syntax =
+
+= Logging =
 
 = Scheduling =
 
