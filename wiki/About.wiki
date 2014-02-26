@@ -2,7 +2,7 @@
 
 = About SMA2PVOutput.ps1 =
 
-A [#Windows_PowerShell Windows Powershell] script that takes data from an [#SMA_Inverter SMA inverter] and uploads it to [#pvoutput.org pvoutput.org]
+SMA2PVOutput.ps1 is a [#Windows_PowerShell Windows Powershell] script that takes data from an [#SMA_Inverter SMA inverter] and uploads it to [#pvoutput.org pvoutput.org]
 
 <wiki:toc max_depth="3" />
 
