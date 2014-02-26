@@ -80,7 +80,7 @@ Additionally, it is recommended that the Time Format within Sunny Explorer be se
 
 Download a copy of the SMA2PVOutput.ps1 script from the Downloads section of the [http://code.google.com/p/sma2pvoutput project home page]. Make a local copy of the SMA2PVOutput.ps1 script on the Windows system on which you run Sunny Explorer.
 
-The location of the script is largely irrelevant, but in the remainder of this section it is assumed that both the script and the plant settings file are located in the same location as the Sunny Explorer data files. By default this is in the `SMA\Sunny Explorer` folder within the `My Documents` folder of the currently logged in user.
+The location of the script is largely irrelevant, but in the remainder of this section it is assumed that both the script and the plant settings file are located in the same location as the Sunny Explorer data files. By default this is in the `Documents\SMA\Sunny Explorer` sub-folder of the currently logged in user.
 
 === Modifying SMA2PVOutput.ps1 ===
 
