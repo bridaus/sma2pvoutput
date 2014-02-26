@@ -122,6 +122,8 @@ The file extension of the plant settings file. A typical value would be `".SX2"`
 
 The password used when connecting to the plant using the User credentials. The default User password for a new inverter is "0000".
 
+=== Configuring the Windows !PowerShell environment ===
+
 = Syntax =
 
 The SMA2PVOutput.ps1 script takes one optional parameter and a further two switches:
@@ -145,6 +147,8 @@ The script sends diagnostic information, by default, to a file called `SMA2PVOut
 In addition to providing diagnostic information, the log also serves as a journal to ensure the same statuses are not repeatedly posted to PVOutput. (Use the `-BatchMode` switch if re-posting statuses is required.)
 
 The log file `SMA2PVOutput.log` can be manually pruned or deleted periodically to save disk space.
+
+In addition, the file `SMA2PVOutputResp.log` stores the last response from the PVOutput web site when posting a status update. The format of the contents of this file will vary depending on whether the `-BatchMode` switch was used when invoking the script.
 
 = Scheduling =
 
