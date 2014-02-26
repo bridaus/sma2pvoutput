@@ -148,13 +148,21 @@ The log file `SMA2PVOutput.log` can be manually pruned or deleted periodically t
 
 = Scheduling =
 
-The script is intended to be run periodically during daylight hours to capture the latest statuses from the inverter and upload these to PVOutput. Scheduling functionality is not provided as part of the script - the Windows Task Scheduler for example is a more than capable of providing this.
+The script is intended to be run periodically during daylight hours to capture the latest statuses from the inverter and upload these to PVOutput. Scheduling functionality is not provided as part of the script - the Windows Task Scheduler for example is more than capable of providing this.
 
-The inverter stores status information at 5 minute intervals. The following command could therefore be scheduled to run at 10 minute intervals starting at 1 minute past the hour:
+The inverter typically stores status information at 5 minute intervals. The following command could therefore be scheduled to run at 15 minute intervals starting at 1 minute past the hour:
 
 `powershell.exe -command "& \"C:\Users\`username`\Documents\SMA\Sunny Explorer\SMA2PVOutput.ps1\" -ExportFromInverter"`
 
+Assuming the above is only scheduled to run during daylight hours, the following command could be scheduled as an end-of-day job to take care of any glitches and ensure all statuses already exported today are uploaded in batch mode:
+
+`powershell.exe -command "& \"C:\Users\`username`\Documents\SMA\Sunny Explorer\SMA2PVOutput.ps1\" -BatchMode"`
+
+The scheduled task should be configured to run whether or not the user is logged in or not. Consider running the task under the `SYSTEM` account to avoid problems with user privileges.
+
 = About the Author =
+
+
 
 = Legal Info =
 
