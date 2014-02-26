@@ -1,4 +1,4 @@
-#summary Introduction to sma2pvoutput.org
+#summary Introduction to SMA2PVOutput.ps1
 
 = About SMA2PVOutput.ps1 =
 
