@@ -124,6 +124,8 @@ The password used when connecting to the plant using the User credentials. The d
 
 = Syntax =
 
+The SMA2PVOutput.ps1 script takes one optional parameter and a further two switches:
+
 `SMA2PVOutput.ps1 [[-Date] yyyyMMdd] [-ExportFromInverter] [-BatchMode]`
 
 where:
@@ -138,7 +140,11 @@ An important difference when using `-BatchMode` is that no attempt is made to ch
 
 = Logging =
 
+The script sends diagnostic information, by default, to a file called `SMA2PVOutput.log` located in the Sunny Explorer data directory. This is the directory specified as the [#$ExportPath export path] in the script.
 
+In addition to providing diagnostic information, the log also serves as a journal to ensure the same statuses are not repeatedly posted to PVOutput. (Use -BatchMode if re-posting statuses is required.)
+
+The log file `SMA2PVOutput.log` can be manually pruned or deleted periodically to save disk space.
 
 = Scheduling =
 
