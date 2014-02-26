@@ -54,13 +54,21 @@ The Windows system should also have access to the internet in order to post stat
 
 === Windows !PowerShell ===
 
-The script has been tested with Windows !PowerShell 4.0, but is intended to work with Windows !PowerShell 3.0 or above. !PowerShell 3.0 is part of the Windows Management Framework 3.0 (WMF3) and requires Windows 7 Service Pack 1 or higher with .NET Framework v4.0. !PowerShell 4.0 is a component of WMF4 and requires .NET Framework v4.5
+The script has been tested with Windows !PowerShell 4.0, but is intended to work with Windows !PowerShell 3.0 or above. !PowerShell 3.0 is part of the Windows Management Framework 3.0 (WMF3) and requires Windows 7 Service Pack 1 or higher with .NET Framework 4.0. !PowerShell 4.0 is a component of WMF4 and requires .NET Framework 4.5.
+
+==== !Powershell Configuation ====
 
 === Sunny Explorer ===
 
+Sunny Explorer is a software tool provided by SMA Solar Technology AG for visualising and managing data from one or more SMA inverters. The SMA2PVOutput.ps1 script uses functionality provided by the Sunny Explorer application to export status information from the inverter(s) to a comma separated value (CSV) file.
 
+The latest version of Sunny Explorer can be downloaded from https://www.sma.de/en/service/downloads.html. The script has been tested with Sunny Explorer v1.07.9.
+
+==== Sunny Explorer Configuration
 
 == Installing SMA2PVOutput.ps1 ==
+
+
 
 == Modifying SMA2PVOutput.ps1 ==
 
