@@ -90,7 +90,7 @@ Open your local copy of the SMA2PVOutput.ps1 script in a text editor (eg Notepad
 
 ==== `$SystemId` ====
 
-This value is the System Id of your system as reported alongside the system name in the [http://www.pvoutput.org/account.jsp account settings] on the[#pvoutput.org pvoutput.org] web site.
+This value is the System Id of your system as reported alongside the system name in the [http://www.pvoutput.org/account.jsp account settings] on the [#pvoutput.org pvoutput.org] web site.
 
 ==== `$ApiKey` ====
 ==== `$SEPath` ====
