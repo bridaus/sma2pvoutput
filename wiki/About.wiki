@@ -124,7 +124,7 @@ The password used when connecting to the plant using the User credentials. The d
 
 = Syntax =
 
-`SMA2PVOutput.ps1 [[-Date] yyyyMMdd] [-ExportFromInverter] [-BatchMode]
+`SMA2PVOutput.ps1 [[-Date] yyyyMMdd] [-ExportFromInverter] [-BatchMode]`
 
 where:
 
