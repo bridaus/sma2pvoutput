@@ -14,7 +14,7 @@ The script can be run on a scheduled basis to periodically post status updates t
 
 == Donations ==
 
-Please consider donating to PVOutput via their [http://www.pvoutput.org/donate.jsp donations page]. Bitcoin donations to the SMA2PVOutput.ps1 [#About_the_Author author] are also welcome via the address `182naT22dToTg7jQ9KM2KmKFnjfqeRna2F`
+Please consider donating to PVOutput via their [http://www.pvoutput.org/donate.jsp donations page]. Bitcoin donations to the SMA2PVOutput.ps1 [#About_the_Author author] are also welcome via the address `182naT22dToTg7jQ9KM2KmKFnjfqeRna2F`.
 
 = Getting Started =
 
