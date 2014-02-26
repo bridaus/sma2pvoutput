@@ -18,7 +18,7 @@ Please consider donating to PVOutput via their [http://www.pvoutput.org/donate.j
 
 = Getting Started =
 
-== pvoutput.org ==
+== PVOutput.org ==
 
 http://www.pvoutput.org is a free service for sharing, comparing and monitoring live solar photovoltaic (PV) and energy consumption data. In order to upload data to a system, it is first necessary to register an account.
 
