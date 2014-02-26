@@ -128,13 +128,17 @@ The password used when connecting to the plant using the User credentials. The d
 
 where:
 
-The `-Date` parameter specifies the date for which PV statuses are to be uploaded. The default is today.
+The `-Date` parameter specifies the date for which PV statuses are to be uploaded to PVOutput. The default is today.
+
 The `-ExportFromInverter` switch tells the script to launch Sunny Explorer to export the day's generation information. The default behaviour is to use existing exported data.
-The `-BatchMode` switch tells the script that rather than upload new statuses one by one, the statuses are posted as a batch of up to 30 statuses.
 
+The `-BatchMode` switch tells the script that rather than upload new statuses one by one to PVOutput, the statuses are posted as a batch of up to 30 statuses.
 
+An important difference when using `-BatchMode` is that no attempt is made to check the log to determine whether a status with the same timestamp has already been uploaded. This is useful when posting corrections to previously uploaded statuses.
 
 = Logging =
+
+
 
 = Scheduling =
 
