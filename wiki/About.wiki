@@ -50,13 +50,13 @@ Once API Access is Enabled, you need an API Key which can be generated from the 
 
 == Modifying SMA2PVOutput.ps1 ==
 
-=== $!SystemId ===
-=== $!ApiKey ===
-=== $!SEPath ===
-=== $!ExportPath ===
-=== $!PlantName ===
-=== $!PlantExtension ===
-=== $!UserPwd ===
+=== !$SystemId ===
+=== !$ApiKey ===
+=== !$SEPath ===
+=== !$ExportPath ===
+=== !$PlantName ===
+=== !$PlantExtension ===
+=== !$UserPwd ===
 
 
 = Syntax =
