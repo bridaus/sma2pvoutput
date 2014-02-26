@@ -56,19 +56,23 @@ The Windows system should also have access to the internet in order to post stat
 
 The script has been tested with Windows !PowerShell 4.0, but is intended to work with Windows !PowerShell 3.0 or above. !PowerShell 3.0 is part of the Windows Management Framework 3.0 (WMF3) and requires Windows 7 Service Pack 1 or higher with .NET Framework 4.0. !PowerShell 4.0 is a component of WMF4 and requires .NET Framework 4.5.
 
-==== !PowerShell Configuation ====
-
 === Sunny Explorer ===
 
 Sunny Explorer is a software tool provided by SMA Solar Technology AG for visualising and managing data from one or more SMA inverters. The SMA2PVOutput.ps1 script uses functionality provided by the Sunny Explorer application to export status information from the inverter(s) to a comma separated value (CSV) file.
 
 The latest version of Sunny Explorer can be downloaded from https://www.sma.de/en/service/downloads.html. The script has been tested with Sunny Explorer v1.07.9.
 
-==== Sunny Explorer Configuration ====
+== Getting Started ==
 
-== Installing SMA2PVOutput.ps1 ==
+=== Configuring Sunny Explorer ===
 
+Once you have installed Sunny Explorer, you will need to launch the application and follow the Plant Assistant which guides you through establishing a connection to your PV plant. Details of the plant are stored in a .SX2 file (or possibly .SXP in older versions) file whose name matches the one you gave to the plant in Sunny Explorer.
 
+The [#$PlantName plant name] and [#$PlantExtension extension] are stored in the SMA2PVOutput.ps1 script and are used when invoking Sunny Explorer to determine the plant whose data is to be uploaded to PVOutput.
+
+The SMA2PVOutput.ps1 script should cope with most date, time and number formats but it is recommended that the settings used within Sunny Explorer match those used by Windows.
+
+Additionally, it is recommended to set the Time Format within Sunny Explorer to 24-hour. To do this, launch Sunny Explorer and highlight the Sunny Explorer branch in the navigation pane. Within the Device settings on the right, ensure the Time Format is set to `HH:mm` and _not_ `hh:mm`.
 
 == Modifying SMA2PVOutput.ps1 ==
 
