@@ -82,7 +82,7 @@ Download a copy of the SMA2PVOutput.ps1 script from the Downloads section of the
 
 The location of the script is largely irrelevant, but in the remainder of this section it is assumed that both the script and the plant settings file are located in the same location as the Sunny Explorer data files. By default this is in the `Documents\SMA\Sunny Explorer` sub-folder of the currently logged in user.
 
-=== Modifying SMA2PVOutput.ps1 ===
+=== Customising SMA2PVOutput.ps1 ===
 
 The script contains 7 variables which need to be modified to reflect the details of the plant you [#Adding_a_system added] to the [#pvoutput.org pvoutput.org] web site and your [#Configuring_Sunny_Explorer Sunny Explorer configuration].
 
