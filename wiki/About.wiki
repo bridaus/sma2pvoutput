@@ -30,7 +30,7 @@ For more information on PVOutput, see http://www.pvoutput.org/help.html
 
 Your [http://www.pvoutput.org/account.jsp account settings] page on pvoutput.org includes a section titled API Settings. In order for the script to function you should ensure that the `API Access` setting within this section is set to `Enabled`.
 
-Once `API Access` is `Enabled`, you need an [#$ApiKey API Key] which can be generated from the [http://www.pvoutput.org/account.jsp account settings] page by clicking on the `New Key` button. The [#ApiKey API Key] is stored in the script as a method of authenticating with [#pvoutput.org pvoutput.org].
+Once `API Access` is `Enabled`, you need an [#$ApiKey API Key] which can be generated from the [http://www.pvoutput.org/account.jsp account settings] page by clicking on the `New Key` button. The [#ApiKey API Key] is stored in the SMA2PVOutput.ps1 script as a method of authenticating with [#pvoutput.org pvoutput.org].
 
 === Adding a system ===
 
