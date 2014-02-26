@@ -142,11 +142,17 @@ An important difference when using `-BatchMode` is that no attempt is made to ch
 
 The script sends diagnostic information, by default, to a file called `SMA2PVOutput.log` located in the Sunny Explorer data directory. This is the directory specified as the [#$ExportPath export path] in the script.
 
-In addition to providing diagnostic information, the log also serves as a journal to ensure the same statuses are not repeatedly posted to PVOutput. (Use -BatchMode if re-posting statuses is required.)
+In addition to providing diagnostic information, the log also serves as a journal to ensure the same statuses are not repeatedly posted to PVOutput. (Use the `-BatchMode` switch if re-posting statuses is required.)
 
 The log file `SMA2PVOutput.log` can be manually pruned or deleted periodically to save disk space.
 
 = Scheduling =
+
+The script is intended to be run periodically during daylight hours to capture the latest statuses from the inverter and upload these to PVOutput. Scheduling functionality is not provided as part of the script - the Windows Task Scheduler for example is a more than capable of providing this.
+
+The inverter stores status information at 5 minute intervals. The following command could therefore be scheduled to run at 10 minute intervals starting at 1 minute past the hour:
+
+`powershell.exe -command "& \"C:\Users\`username`\Documents\SMA\Sunny Explorer\SMA2PVOutput.ps1\" -ExportFromInverter"`
 
 = About the Author =
 
