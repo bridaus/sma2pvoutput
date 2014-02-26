@@ -98,7 +98,7 @@ This value is the API Key of your system as listed in the API Settings section o
 
 ==== `$SEPath` ====
 
-This value specifies the installation folder for the Sunny Explorer application and should be the name of the folder containing the SunnyExplorer.exe executable file.
+This value specifies the installation folder for the Sunny Explorer application and should be the name of the folder containing the !SunnyExplorer.exe executable file.
 
 Typical values would be `"C:\Program Files\SMA\Sunny Explorer"` or `"C:\Program Files (x86)\SMA\Sunny Explorer"`.
 
