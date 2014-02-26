@@ -28,7 +28,7 @@ For more information on pvoutput.org, see http://www.pvoutput.org/help.html
 
 === API Settings ===
 
-Your [http://www.pvoutput.org/account.jsp account settings] on pvoutput.org include a section called API Settings. In order for the script to function you should ensure that the API Access setting within this section is set to Enabled.
+Your [http://www.pvoutput.org/account.jsp account settings] page on pvoutput.org include a section titled API Settings. In order for the script to function you should ensure that the API Access setting within this section is set to Enabled.
 
 Once API Access is Enabled, you need an API Key which can be generated from the [http://www.pvoutput.org/account.jsp account settings] page by clicking on the New Key button.
 
@@ -49,6 +49,15 @@ Once API Access is Enabled, you need an API Key which can be generated from the 
 == Installing SMA2PVOutput.ps1 ==
 
 == Modifying SMA2PVOutput.ps1 ==
+
+=== $SystemId ===
+=== $ApiKey ===
+=== $SEPath ===
+=== $ExportPath ===
+=== $PlantName ===
+=== $PlantExtension ===
+=== $UserPwd ===
+
 
 = Syntax =
 
