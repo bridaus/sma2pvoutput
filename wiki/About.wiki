@@ -84,6 +84,10 @@ The location of the script is largely irrelevant, but in the remainder of this s
 
 === Modifying SMA2PVOutput.ps1 ===
 
+The script contains 7 variables which need to be modified to reflect the details of the plant you [#Adding_a_system added] to the [#pvoutput.org pvoutput.org] web site and your [#Configuring_Sunny_Explorer Sunny Explorer configuration].
+
+Open your local copy of the script in a text editor (eg Notepad) and locate the following values at the top of the script. Modify the values according to the specifics of your systems, enclosing each value in double quotes.
+
 ==== `$SystemId` ====
 ==== `$ApiKey` ====
 ==== `$SEPath` ====
