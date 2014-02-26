@@ -60,7 +60,7 @@ The script has been tested with Windows !PowerShell 4.0, but is intended to work
 
 Sunny Explorer is a software tool provided by SMA Solar Technology AG for visualising and managing data from one or more SMA inverters. The SMA2PVOutput.ps1 script uses functionality provided by the Sunny Explorer application to export status information from the inverter(s) to a comma separated value (CSV) file.
 
-The latest version of Sunny Explorer can be downloaded from https://www.sma.de/en/service/downloads.html. The script has been tested with Sunny Explorer v1.07.9.
+The latest version of Sunny Explorer can be downloaded from https://www.sma.de/en/service/downloads.html. The SMA2PVOutput.ps1 script has been tested with Sunny Explorer v1.07.9.
 
 == Getting Started ==
 
