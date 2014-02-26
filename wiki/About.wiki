@@ -66,7 +66,7 @@ The latest version of Sunny Explorer can be downloaded from https://www.sma.de/e
 
 === Configuring Sunny Explorer ===
 
-Once you have installed Sunny Explorer, you will need to launch the application and follow the Plant Assistant which guides you through establishing a connection to your PV plant. Details of the plant are stored in a .SX2 file (or possibly .SXP in older versions) file whose name matches the one you gave to the plant in Sunny Explorer.
+Once you have installed Sunny Explorer, you will need to launch the application and follow the Plant Assistant which guides you through establishing a connection to your PV plant. Details of the plant are stored in a .SX2 file (or possibly a .SXP file in older versions) whose name matches the one you gave to the plant in Sunny Explorer.
 
 The [#$PlantName plant name] and [#$PlantExtension extension] are stored in the SMA2PVOutput.ps1 script and are used when invoking Sunny Explorer to determine the plant whose data is to be uploaded to PVOutput.
 
