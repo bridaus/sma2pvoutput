@@ -74,7 +74,7 @@ The [#$PlantName plant name] and [#$PlantExtension extension] are stored in the 
 
 The SMA2PVOutput.ps1 script should cope with most date, time and number formats but it is recommended that the settings used within Sunny Explorer match those used by Windows.
 
-Additionally, it is recommended that the Time Format within Sunny Explorer be set to 24-hour. To do this, launch Sunny Explorer and highlight the Sunny Explorer branch in the navigation pane. Within the Device settings on the right, ensure the Time Format is set to `HH:mm` and _not_ `hh:mm`.
+Additionally, it is recommended that the Time Format within Sunny Explorer be set to 24-hour. To verify this, launch Sunny Explorer and highlight the Sunny Explorer branch in the navigation pane. Within the Device settings on the right, ensure the Time Format is set to `HH:mm` and _not_ `hh:mm`.
 
 === Downloading the SMA2PVOutput.ps1 script ===
 
