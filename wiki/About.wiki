@@ -50,7 +50,7 @@ A PV plant can comprise one or more inverters. The SMA2PVOutput.ps1 script is de
 
 The Windows system on which the script runs should have network connectivity to the PV Plant (typically via Bluetooth). To test this, verify that [#Sunny_Explorer Sunny Explorer] is able to connect to the plant.
 
-The Windows system should also have access to the internet in order to post status updates to PVOutput. Ensure that any software or hardware firewalls allow access by the user running the script to the [#pvoutput.org pvoutput.org] web site.
+The Windows system should also have access to the internet in order to post status updates to PVOutput. Ensure that any software or hardware firewalls allow access to the [#pvoutput.org pvoutput.org] web site by the user running the script.
 
 == Software Requirements ===
 
