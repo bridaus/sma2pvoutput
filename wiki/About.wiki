@@ -124,6 +124,12 @@ The password used when connecting to the plant using the User credentials. The d
 
 === Configuring the Windows !PowerShell environment ===
 
+By default, the Windows !PowerShell execution policy is set to `Restricted` which means scripts cannot be run! To check your execution policy, run the `Get-ExecutionPolicy` cmdlet from a Windows !PowerShell prompt.
+
+To weaken the Windows !Powershell execution policy to allow scripts you have written yourself to run, along with downloaded scripts that have been signed by a trusted publisher, open a Windows !PowerShell prompt as an Administrator and run `Set-ExecutionPolicy RemoteSigned`. However you should first run `Get-Help About_Signing` to determine whether this execution policy meets your security requirements.
+
+Because the SMA2PVOutput.ps1 script has not been signed by a trusted publisher, if the execution policy is set to `RemoteSigned` you will  then need to run the cmdlet `unblock_file` with the full path to the SMA2PVOutput.ps1 script as a parameter to allow the script to be invoked.
+
 = Syntax =
 
 The SMA2PVOutput.ps1 script takes one optional parameter and a further two switches:
