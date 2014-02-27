@@ -174,6 +174,8 @@ The scheduled task should be configured to run whether or not the user is logged
 
 I have a background in IT and developed the script to meet my own needs, but also to challenge myself with an unfamiliar scripting language.
 
+The script is currently being used to feed generation information on my PV system to pvoutput.org. You can see the results [http://www.pvoutput.org/list.jsp?userid=2821 here].
+
 Feedback on the script is welcome. Please email me at neil.schofield1@gmail.com.
 
 If you find the script useful, please consider making a [#Donations donation].
