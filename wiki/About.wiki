@@ -172,8 +172,11 @@ The scheduled task should be configured to run whether or not the user is logged
 
 = About the Author =
 
+I have a background in IT and developed the script to meet my own needs, but also to challenge myself with an unfamiliar scripting language.
 
 
-= Legal Info =
+
+
+= Legal Stuff =
 
 The SMA2PVOutput.ps1 script is provided 'as is' without any warranty of any kind. SMA and Sunny Explorer are registered trademarks of SMA Solar Technologies AG.
