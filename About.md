@@ -1,0 +1,183 @@
+# About SMA2PVOutput.ps1 #
+
+SMA2PVOutput.ps1 is a [Windows Powershell](#Windows_PowerShell.md) script that takes data from one or more [SMA inverters](#SMA_Inverter.md) and uploads it to [pvoutput.org](#pvoutput.org.md)
+
+
+
+# Introduction #
+
+The SMA2PVOutput.ps1 script is intended to be used in conjunction with the [Sunny Explorer](#Sunny_Explorer.md) software from SMA to gather data from a solar PV plant and upload it to [pvoutput.org](#pvoutput.org.md).
+
+The script can be run on a scheduled basis to periodically post status updates that can then be viewed remotely via the [pvoutput.org](#pvoutput.org.md) web site.
+
+## Donations ##
+
+Please consider donating to PVOutput via their [donations page](http://www.pvoutput.org/donate.jsp). Bitcoin donations to the SMA2PVOutput.ps1 [author](#About_the_Author.md) are also welcome via the address `182naT22dToTg7jQ9KM2KmKFnjfqeRna2F`.
+
+# Getting Started #
+
+## PVOutput.org ##
+
+http://www.pvoutput.org is a free service for sharing, comparing and monitoring live solar photovoltaic (PV) and energy consumption data. In order to upload data to a system on PVOutput, it is first necessary to register an account.
+
+Once you have registered a user, log in and [add your system(s)](#Adding_a_System.md) to the account.
+
+For more information on PVOutput, see http://www.pvoutput.org/help.html
+
+### API Settings ###
+
+Your [account settings](http://www.pvoutput.org/account.jsp) page on pvoutput.org includes a section titled API Settings. In order for the script to function you should ensure that the `API Access` setting within this section is set to `Enabled`.
+
+Once `API Access` is `Enabled`, you need an [API Key](#$ApiKey.md) which can be generated from the [account settings](http://www.pvoutput.org/account.jsp) page by clicking on the `New Key` button. The [API Key](#$ApiKey.md) is stored in the SMA2PVOutput.ps1 script as a method of authenticating with [pvoutput.org](#pvoutput.org.md).
+
+### Adding a system ###
+
+Your [account settings](http://www.pvoutput.org/account.jsp) page on pvoutput.org also includes a section titled Registered Systems. Use the `Add System` link to register a new system. The [System Id](#$SystemId.md) is also stored in the SMA2PVOutput.ps1 script as a means of identifying the system whose data is being uploaded.
+
+Edit the properties of the system you have registered and change the `Status Interval` setting to `5 minutes`. The `Status Interval` setting can be found in the section titled Live Settings .
+
+## Hardware Requirements ##
+
+### SMA Inverter ###
+
+The SMA2PVOutput.ps1 script uses the SMA [Sunny Explorer](#Sunny_Explorer.md) tool to obtain data from the PV inverter. It should therefore work with any SMA inverter supported by Sunny Explorer.
+
+A PV plant can comprise one or more inverters. The SMA2PVOutput.ps1 script is designed to work with PV plants containing up to 4 inverters.
+
+### Network Connectivity ###
+
+The Windows system on which the script runs should have network connectivity to the PV Plant (typically via Bluetooth). To test this, verify that [Sunny Explorer](#Sunny_Explorer.md) is able to connect to the plant.
+
+The Windows system should also have access to the internet in order to post status updates to PVOutput. Ensure that any software or hardware firewalls allow access to the [pvoutput.org](#pvoutput.org.md) web site by the user running the script.
+
+## Software Requirements ##
+
+### Windows PowerShell ###
+
+The script has been tested with Windows PowerShell 4.0, but is intended to work with Windows PowerShell 3.0 or above. PowerShell 3.0 is part of the Windows Management Framework 3.0 (WMF3) and requires Windows 7 Service Pack 1 or higher with .NET Framework 4.0. PowerShell 4.0 is a component of WMF4 and requires .NET Framework 4.5.
+
+### Sunny Explorer ###
+
+Sunny Explorer is a software tool provided by SMA Solar Technology AG for visualising and managing data from one or more SMA inverters. The SMA2PVOutput.ps1 script uses functionality provided by the Sunny Explorer application to export status information from the inverter(s) to a comma separated value (CSV) file.
+
+The latest version of Sunny Explorer can be downloaded from https://www.sma.de/en/service/downloads.html. The SMA2PVOutput.ps1 script has been tested with Sunny Explorer v1.07.9.
+
+## Getting Started ##
+
+### Configuring Sunny Explorer ###
+
+Once you have installed Sunny Explorer, you will need to launch the application and follow the Plant Assistant which guides you through establishing a connection to your PV plant. Details of the plant are stored in a .SX2 file (or possibly a .SXP file in older versions) whose name matches the one you gave to the plant in Sunny Explorer.
+
+The [plant name](#$PlantName.md) and [extension](#$PlantExtension.md) are stored in the SMA2PVOutput.ps1 script and are used when invoking Sunny Explorer to determine the plant whose data is to be uploaded to PVOutput.
+
+The SMA2PVOutput.ps1 script should cope with most date, time and number formats but it is recommended that the settings used within Sunny Explorer match those used by Windows.
+
+Additionally, it is recommended that the Time Format within Sunny Explorer be set to 24-hour. To verify this, launch Sunny Explorer and highlight the Sunny Explorer branch in the navigation pane. Within the Device settings on the right, ensure the Time Format is set to `HH:mm` and _not_ `hh:mm`.
+
+### Downloading the SMA2PVOutput.ps1 script ###
+
+Download a copy of the SMA2PVOutput.ps1 script from the Downloads section of the [project home page](http://code.google.com/p/sma2pvoutput). Make a local copy of the SMA2PVOutput.ps1 script on the Windows system on which you run Sunny Explorer.
+
+The location of the script is largely irrelevant, but in the remainder of this section it is assumed that both the script and the plant settings file are located in the same location as the Sunny Explorer data files. By default this is in the `Documents\SMA\Sunny Explorer` sub-folder of the currently logged in user.
+
+### Customising SMA2PVOutput.ps1 ###
+
+The script contains 7 variables which need to be modified to reflect the details of the plant you [added](#Adding_a_system.md) to the [pvoutput.org](#pvoutput.org.md) web site and your [Sunny Explorer configuration](#Configuring_Sunny_Explorer.md).
+
+Open your local copy of the SMA2PVOutput.ps1 script in a text editor (eg Notepad) and locate the values listed below at the top of the script. Modify the values according to the specifics of your systems (enclosing each value in double quotes) and save the script.
+
+#### `$SystemId` ####
+
+This value is the System Id of your system as reported alongside the system name in the [account settings](http://www.pvoutput.org/account.jsp) on the [pvoutput.org](#pvoutput.org.md) web site.
+
+#### `$ApiKey` ####
+
+This value is the API Key of your system as listed in the API Settings section of the [account settings](http://www.pvoutput.org/account.jsp) on the [pvoutput.org](#pvoutput.org.md) web site.
+
+#### `$SEPath` ####
+
+This value specifies the installation folder for the Sunny Explorer application and should be the name of the folder containing the SunnyExplorer.exe executable file.
+
+Typical values would be `"C:\Program Files\SMA\Sunny Explorer"` or `"C:\Program Files (x86)\SMA\Sunny Explorer"`.
+
+#### `$ExportPath` ####
+
+This values specified the data folder for Sunny Explorer. It is the folder that Sunny Explorer uses to locate the plant settings file and also where the CSV files produced when PV status information is exported are stored.
+
+A typical value would be `"C:\Users\`_username_`\Documents\SMA\Sunny Explorer"`.
+
+#### `$PlantName` ####
+
+The name of the plant as defined in Sunny Explorer. It is the name of the plant settings file without the .SX2 or .SXP extension.
+
+A typical value would be `"My PV plant 1"`.
+
+#### `$PlantExtension` ####
+
+The file extension of the plant settings file. A typical value would be `".SX2"` or `".SXP"`
+
+#### `$UserPwd` ####
+
+The password used when connecting to the plant using the User credentials. The default User password for a new inverter is "0000".
+
+### Configuring the Windows PowerShell environment ###
+
+By default, the Windows PowerShell execution policy is set to `Restricted` which means scripts cannot be run! To check your execution policy, run the `Get-ExecutionPolicy` cmdlet from a Windows PowerShell prompt.
+
+To weaken the Windows !Powershell execution policy to allow scripts you have written yourself to run, along with downloaded scripts that have been signed by a trusted publisher, open a Windows PowerShell prompt as an Administrator and run `Set-ExecutionPolicy RemoteSigned`. However you should first run `Get-Help About_Signing` to determine whether this execution policy meets your security requirements.
+
+Because the SMA2PVOutput.ps1 script has not been signed by a trusted publisher, if the execution policy is set to `RemoteSigned` you will  then need to run the cmdlet `unblock_file` with the full path to the SMA2PVOutput.ps1 script as a parameter to allow the script to be invoked.
+
+# Syntax #
+
+The SMA2PVOutput.ps1 script takes one optional parameter and a further two switches:
+
+`SMA2PVOutput.ps1 [[-Date] yyyyMMdd] [-ExportFromInverter] [-BatchMode]`
+
+where:
+
+The `-Date` parameter specifies the date for which PV statuses are to be uploaded to PVOutput. The default is today.
+
+The `-ExportFromInverter` switch tells the script to launch Sunny Explorer to export the day's generation information. The default behaviour is to use existing exported data.
+
+The `-BatchMode` switch tells the script that rather than upload new statuses one by one to PVOutput, the statuses are posted as a batch of up to 30 statuses.
+
+An important difference when using `-BatchMode` is that no attempt is made to check the log to determine whether a status with the same timestamp has already been uploaded. This is useful when posting corrections to previously uploaded statuses.
+
+# Logging #
+
+The script sends diagnostic information, by default, to a file called `SMA2PVOutput.log` located in the Sunny Explorer data directory. This is the directory specified as the [export path](#$ExportPath.md) in the script.
+
+In addition to providing diagnostic information, the log also serves as a journal to ensure the same statuses are not repeatedly posted to PVOutput. (Use the `-BatchMode` switch if re-posting statuses is required.)
+
+The log file `SMA2PVOutput.log` can be manually pruned or deleted periodically to save disk space.
+
+In addition, the file `SMA2PVOutputResp.log` stores the last response from the PVOutput web site when posting a status update. The format of the contents of this file will vary depending on whether the `-BatchMode` switch was used when invoking the script.
+
+# Scheduling #
+
+The script is intended to be run periodically during daylight hours to capture the latest statuses from the inverter and upload these to PVOutput. Scheduling functionality is not provided as part of the script - the Windows Task Scheduler for example is more than capable of providing this.
+
+The inverter typically stores status information at 5 minute intervals. The following command could therefore be scheduled to run at, say, 15 minute intervals starting at 1 minute past the hour:
+
+`powershell.exe -command "& \"C:\Users\`username`\Documents\SMA\Sunny Explorer\SMA2PVOutput.ps1\" -ExportFromInverter"`
+
+Assuming the above is only scheduled to run during daylight hours, the following command could be scheduled as an end-of-day job to take care of any glitches and ensure all statuses already exported today are uploaded in batch mode:
+
+`powershell.exe -command "& \"C:\Users\`username`\Documents\SMA\Sunny Explorer\SMA2PVOutput.ps1\" -BatchMode"`
+
+The scheduled task should be configured to run whether or not the user is logged in or not. Consider running the task under the `SYSTEM` account to avoid problems with user privileges.
+
+# About the Author #
+
+I have a background in IT and developed the script to meet my own needs, but also to challenge myself with an unfamiliar scripting language.
+
+The script is currently being used to feed generation information on my PV system to pvoutput.org. You can see the results [here](http://www.pvoutput.org/list.jsp?userid=2821).
+
+Feedback on the script is welcome. Please email me at neil.schofield1@gmail.com.
+
+If you find the script useful, please consider making a [donation](#Donations.md).
+
+# Legal Stuff #
+
+The SMA2PVOutput.ps1 script is provided 'as is' without any warranty of any kind. SMA and Sunny Explorer are registered trademarks of SMA Solar Technologies AG.
